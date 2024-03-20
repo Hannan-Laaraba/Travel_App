@@ -12,7 +12,7 @@ function Newsletter(){
                 <div className="my-4">
                     <div className="flex flex-col sm:flex row items-center jusify-between  w-full">
                         <input className="p-3 flex w-full rounded-md text-black" type="email" placeholder="Enter Email"/>
-                        <button className="bg-[#00df9a] w-[200] rounded-md font-bold my-6 mx-auto py-3 text-black pl-2 pr-2">Notify Me</button>
+                        <button  className="bg-[#00df9a] w-[200] rounded-md font-bold my-6 mx-auto py-3 text-black pl-2 pr-2">Notify Me</button>
                     </div>
                     <p></p>
                 </div>
