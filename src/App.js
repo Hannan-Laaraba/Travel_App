@@ -1,33 +1,20 @@
 import React from "react";
-import Navbar from "./components/Navbar";
-import Hero from "./components/hero";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import About from "./components/about";
- import Newsletter from "./components/newsletter";
- import Services from "./components/services";
- import Footer from "./components/footer";
-// import Gallery from "../src/pages/gallery";
-// import Services from "./components/services";
-// import { createBrowserRouter } from "react-router-dom";
-
-
-// const router = createBrowserRouter ([
-//   {path:'/', element: <Hero />},
-//   {path:'/about', element: < About/>},
-//   {path:'/gallery', element: <Gallery/>},
-//   {path:'/services', element: <Services/>}
-// ])
-
+import Gallery from "../src/pages/gallery";
+import Home from "./pages/home";
+import ServiceCards from "./components/servicecards";
 
 function App() {
   return (
-    <>
-     <Navbar/>
-     <Hero/>
-     <About/>
-     <Newsletter/>
-     <Services/>
-     <Footer/>
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/servicecards" element={<ServiceCards />} />
+      </Routes>
+    </Router>
   );
 }
 

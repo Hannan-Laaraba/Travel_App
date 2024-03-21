@@ -30,7 +30,7 @@ function Hero() {
       style={{
         backgroundImage: `linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(${allImages[images]})`,backgroundSize: 'cover',
         backgroundPosition: 'center',
-        
+                          
       }}
     >
       <div className="text-white">
