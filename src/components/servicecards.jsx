@@ -55,7 +55,6 @@ function ServiceCards() {
         </div>
       </div>
     </div>
-    <Footer/>
     </>
   );
 }
